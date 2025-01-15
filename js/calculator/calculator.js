@@ -7,7 +7,7 @@ const subtract = function(a, b) {
 
 function divide(a, b){
   if(b===0){
-    return console.log("No")
+    return "No se puede"
   }
   else{
     return a / b;

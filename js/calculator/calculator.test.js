@@ -20,7 +20,7 @@ test('Divide ', () => {
   expect(calculator.divide(10, 2)).toBe(5);
 });
 test('Divide ', () => {
-  expect(calculator.divide(5, 0)).toContain("no")
+  expect(calculator.divide(5, 0)).toContain("No se puede")
 });
 ////testear mult
 test('Divide ', () => {
