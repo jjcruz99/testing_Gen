@@ -30,11 +30,22 @@ test('add user to userController', () => {
     userController.add(usuario3) 
     expect(userController.findByEmail(usuario3.getEmail())).toContain("nelson@generation.org");
   }); 
+  test('test filtrar usuario por email', () => {    
+    let usuario31 = new User(9381,"Nelson2", "nelson2@generation.org"); 
+    userController.add(usuario31) 
+    expect(userController.findByEmail(usuario31.getEmail())).toContain("nelson2@generation.org");
+  }); 
   //Implementar 2 pruebas unitarias para la función findById().
   test('test filtrar usuario por id', () => {    
     let usuario4 = new User(5858,"Juan", "juan@generation.org"); 
     userController.add(usuario4) 
     expect(userController.findById(5858)).toBe(usuario4);
   }); 
-
+  test('test filtrar usuario por id', () => {    
+    let usuario41 = new User(58580,"Juan2", "juan2@generation.org"); 
+    userController.add(usuario41) 
+    expect(userController.findById(58580)).toBe(usuario41);
+  }); 
+  
+  
 
